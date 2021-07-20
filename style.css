@@ -1,0 +1,47 @@
+/* main container */
+.m-container{
+    height:100vh;
+    background-color: #000;
+    background-image: url(Multimedia/pexels-elena-blessing-2674052.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+.m-main{
+    margin:auto;
+    width: 60%;
+    padding: .4rem .2rem;
+    text-align: center;
+    background: rgb(0 0 0 / 62%);
+    color: #fff;
+}
+.m-boxes{
+    padding:.6rem .2rem;
+}
+.m-boxes .time{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+}
+.q{
+    line-height: 1.2;
+ 
+}
+.q::before{
+    content:open-quote;
+    padding:.2rem;
+    
+
+}
+.q::after{
+    content:close-quote;
+    padding:.2rem;
+}
+@media (min-width:800px){
+    .m-boxes .time{
+        font-size: 6rem;
+    }
+    .quote{
+        font-size:2.5rem;
+        text-align: center;
+    }
+}
