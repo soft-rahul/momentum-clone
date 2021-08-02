@@ -122,7 +122,7 @@ setInterval(greet,4000);
 // adding new feature
 function changeBg() {
     const mainElement = document.querySelector('#main');
-    mainElement.style.backgroundImage = `url(Multimedia/p${Math.floor(Math.random()*9)}.jpg)`;
+    mainElement.style.backgroundImage = `url(Multimedia/p${Math.floor(Math.random()*13)}.jpg)`;
 
 }
     
