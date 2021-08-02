@@ -44,7 +44,7 @@
   width: 70%;
   padding: 0.4rem 0.2rem;
   text-align: center;
-  background: rgb(0 0 0 / 62%);
+  background: rgba(244,233,233,0.4);
   color: #fff;
 }
 .m-boxes {
