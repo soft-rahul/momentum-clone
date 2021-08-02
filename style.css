@@ -2,8 +2,9 @@
 /* main container */
 .m-container {
   height: 100vh;
+  transition:background 400ms;
   background-color: #000;
-  background-image: url(Multimedia/p7.jpg);
+  background-image: url(Multimedia/p1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
