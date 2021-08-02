@@ -1,47 +1,116 @@
-/* main container */
-.m-container{
-    height:100vh;
-    background-color: #000;
-    background-image: url(Multimedia/pexels-elena-blessing-2674052.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-}
-.m-main{
-    margin:auto;
-    width: 60%;
-    padding: .4rem .2rem;
-    text-align: center;
-    background: rgb(0 0 0 / 62%);
-    color: #fff;
-}
-.m-boxes{
-    padding:.6rem .2rem;
-}
-.m-boxes .time{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4rem;
-}
-.q{
-    line-height: 1.2;
  
+/* main container */
+.m-container {
+  height: 100vh;
+  background-color: #000;
+  background-image: url(Multimedia/p7.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
 }
-.q::before{
-    content:open-quote;
-    padding:.2rem;
-    
-
+.m-main {
+  margin: auto;
+  width: 70%;
+  padding: 0.4rem 0.2rem;
+  text-align: center;
+  background: rgb(0 0 0 / 62%);
+  color: #fff;
 }
-.q::after{
-    content:close-quote;
-    padding:.2rem;
+.m-boxes {
+  padding: 0.6rem 0.2rem;
 }
-@media (min-width:800px){
-    .m-boxes .time{
-        font-size: 6rem;
-    }
-    .quote{
-        font-size:2.5rem;
-        text-align: center;
-    }
+.m-boxes .time {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 4rem;
+}
+.q {
+  line-height: 1.2;
+}
+.q::before {
+  content: open-quote;
+  padding: 0.2rem;
+}
+.q::after {
+  content: close-quote;
+  padding: 0.2rem;
+}
+@media (min-width: 800px) {
+  .m-boxes .time {
+    font-size: 6rem;
+  }
+  .quote {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+/* greet */
+.greet{
+  color:cyan;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 1s;
+}
+/* footer */
+.footer-container{
+  position: fixed;
+  bottom: 2rem;
+  left:3rem;
+}
+.footer-container button{
+  background: none;
+  border:none;
+  color:#fff;
+  font-size: 1.4rem;
+  background-color: cyan;
+  padding:.4rem .8rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.footer-container button:hover{
+    background-color: #fff;
+    color:cyan; 
+}
+.footer-menu{
+  position:absolute;
+  top:-8rem;
+  left:-2rem;
+  padding:1.5rem;
+  background-color: #92868640;
+  display: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  
+}
+.close{
+  position: absolute;
+  top:.3rem;
+  right:.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.close:hover{
+  background-color: cyan;
+  color:#fff;
+}
+.footer-menu span + button{
+  border-left: 4px solid black;
+}
+.footer-menu span + button.special{
+  background-color: #fff;
+  color:#000;
+  transform: background 600ms;
+}
+.footer-menu span + button.special:hover{
+  background-color: cyan;
+  color: #fff;
 }

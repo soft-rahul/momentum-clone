@@ -32,6 +32,23 @@ function quotes() {
         `Small daily improvements are the key to staggering long term results`,
         `Motivation is what gets you started. Habit is what keeps you going – Jim Rohn`,
         `Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success." --Swami Vivekananda`,
+        `I am capable . I am Strong. I Believe in Myself `,
+        `There's Plenty of Time to Rest When You're dead .`,
+        `You do not find the happy life. You make it.`,
+        `No pressure, No Diamonds`,
+        `Stay hungry,Stay foolish`,
+        `Eat,Sleep,Code,Repeat;`,
+        `Every Moment is a fresh beginning `,
+        `Try Again,Fail again,Fail Better.`,
+        `You never fail until you stop trying...`,
+        `Dream Big, stay positive, work hard, and enjoy the journey..`,
+        `Enjoy the little things, for one day you may look back and realize they were the big things...`,
+        `If beautiful lilies bloom in ugly waters, you too can blossom in ugly situations ..`,
+        `I may stumble. I may fail. I may cry.But I'll NEVER give up! Tomorrow, I rise again.`,
+        `EveryThing you can imagine is real..`,
+        `We are all in the gutter , but some of us are looking at the stars..`,
+        `Mostly, the world sees you the way you see yourself..`,
+        `There is no substitute for hard work ...`
 
 
     ];
@@ -41,7 +58,7 @@ function quotes() {
 
 
 }
-setInterval(quotes, 60 * 1000);
+setInterval(quotes, 10 * 1000);
 // Time 
 function clock() {
     const h1 = document.querySelector('h1');
@@ -68,19 +85,37 @@ function greet() {
 
     let date = new Date();
     let hour = date.getHours();
+    let sec = date.getSeconds();
 
+    let allMantra = [
+        'You get what you focus on.',
+        'Love for all , Hatred for none.... ',
+        'What we think, we become....',
+        'I\'m doing this for me.',
+        'Yesterday You said Tomorrow..',
+        'Don\'t wish for it , work for it...',
+        'One Year equals 365 possibilites..',
+        'Work Harder'
+    ];
+    if (sec % 10 == 0) {
 
+        if (hour >= 4 && hour < 12) {
+            h2.textContent = `Good Morning, ${USERNAME}`;
 
-    if (hour >= 4 && hour < 12) {
-        h2.textContent = `Good Morning, ${USERNAME}`;
+        } else if (hour >= 12 && hour <= 16) {
+            h2.textContent = `Good Afternoon, ${USERNAME}`;
 
-    } else if (hour >= 12 && hour <= 16) {
-        h2.textContent = `Good Afternoon, ${USERNAME}`;
+        } else if (hour >= 16 || hour < 4) {
+            h2.textContent = `Good Evening, ${USERNAME}`;
 
-    } else if (hour >= 16 || hour < 4) {
-        h2.textContent = `Good Evening, ${USERNAME}`;
+        }
+       
 
+    } else {
+
+        h2.textContent = `${allMantra[Math.floor(Math.random() * allMantra.length)]}`;
     }
-}
-   
-setInterval(greet,1000);
+} 
+
+setInterval(greet,4000);
+

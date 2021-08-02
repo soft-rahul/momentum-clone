@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum Clone</title>
 
     <!-- adding external resources -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main class="m-container">
-        <header class="m-header"></header>
-        <!-- main area -->
-        <section class="m-main">
-            <div class="m-boxes time">
-                <h1 class="time">Time</h1>
-            </div>
-            <div class="m-boxes greeting">
-                <h2 class="greet">
-                  
-                </h2>
-            </div>
-            <div class="m-boxes quote">
-                <h2 class="q">Eeverything has beauty, but not everyone can see.</h2>
-            </div>
-        </section>
-        <footer class="m-footer"></footer>
+      <header class="m-header">
+
+      </header>
+      <!-- main area -->
+      <section class="m-main">
+        <div class="m-boxes time">
+          <h1 class="time">Time</h1>
+        </div>
+        <div class="m-boxes greeting">
+          <h2 class="greet"></h2>
+        </div>
+        <div class="m-boxes quote">
+          <h2 class="q">Eeverything has beauty, but not everyone can see.</h2>
+        </div>
+      </section>
+      <footer class="m-footer">
+        <div class="footer-container">
+          <button onclick="openMenu()">
+            &#9776;
+          </button>
+          <div class="footer-menu">
+            <span class="close" onclick="closeMenu()">
+              &times;
+            </span>
+            <button class="special" onclick="changeBg()">
+              Change Background
+            </button>
+          </div>
+        </div>
+      </footer>
     </main>
     <!-- script -->
+    <script>
+      function openMenu() {
+        document.querySelector('.footer-menu').style.display = 'block';
+      }
+      function closeMenu() {
+        document.querySelector('.footer-menu').style.display = 'none';
+      }
+      function changeBg() {
+        
+        
+
+      }
+    </script>
     <script src="dynamic.js"></script>
-</body>
+  </body>
 </html>
