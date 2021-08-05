@@ -4,16 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Momentum Clone </title>
+    <title>Momentum Clone</title>
+
+    <!-- favicon -->
+    <!-- TODO: add favicon here  -->
 
     <!-- adding external resources -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
   </head>
   <body>
-      <main id="main" class="m-container">
-      <header class="m-header">
-
+    <main id="main" class="main-container">
+      <header class="header">
+        <div class="menu">
+          <div class="button" onclick="myMenuOpen()">&#9776;</div>
+          <div class="menu-content display">
+            <div class="menu-content-options">
+              <button class="close-x" onclick="myMenuClose()">&times;</button>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                  fill="#00cba9"
+                  fill-opacity="1"
+                  d="M0,96L48,101.3C96,107,192,117,288,144C384,171,480,213,576,202.7C672,192,768,128,864,122.7C960,117,1056,171,1152,192C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="gitHub">
+          <a href="https://github.com/soft-rahul">
+            <img
+              src="favicon.ico"
+              style="
+                display: inline-block;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+              "
+              alt="MyPic"
+              class="circle"
+            />
+          </a>
+        </div>
       </header>
       <!-- main area -->
       <section class="m-main">
@@ -29,13 +62,9 @@
       </section>
       <footer class="m-footer">
         <div class="footer-container">
-          <button onclick="openMenu()">
-            &#9776;
-          </button>
+          <button onclick="openMenu()">&#9776;</button>
           <div class="footer-menu">
-            <span class="close" onclick="closeMenu()">
-              &times;
-            </span>
+            <span class="close" onclick="closeMenu()"> &times; </span>
             <button class="special" onclick="changeBg()">
               Change Background
             </button>
@@ -46,19 +75,21 @@
     <!-- script -->
 
     <script>
-
-
+      function myMenuOpen() {
+        const ele = document.querySelector(".display").style;
+        ele.display = "block";
+      }
+      function myMenuClose() {
+        const ele = document.querySelector(".display").style;
+        ele.display = "none";
+      }
       function openMenu() {
-        document.querySelector('.footer-menu').style.display = 'block';
+        document.querySelector(".footer-menu").style.display = "block";
       }
       function closeMenu() {
-        document.querySelector('.footer-menu').style.display = 'none';
+        document.querySelector(".footer-menu").style.display = "none";
       }
-      function changeBg() {
-        
-        
-
-      }
+      function changeBg() {}
     </script>
     <script src="dynamic.js"></script>
   </body>
