@@ -3,7 +3,8 @@ function quotes() {
 
 
 
-    let myQuotes = [`when you have a dream , you've got to grab it and never let go.`,
+    let myQuotes = [
+        `when you have a dream , you've got to grab it and never let go.`,
         `Nothing is impossible.The word itself says I'm possible !`,
         `There is nothing impossible to they who will try `,
         ` The bad news is time flies. The good news is you're the pilot `,
@@ -48,7 +49,21 @@ function quotes() {
         `EveryThing you can imagine is real..`,
         `We are all in the gutter , but some of us are looking at the stars..`,
         `Mostly, the world sees you the way you see yourself..`,
-        `There is no substitute for hard work ...`
+        `There is no substitute for hard work ...`,
+
+        'You get what you focus on.',
+        'Love for all , Hatred for none.... ',
+        'What we think, we become....',
+        'I\'m doing this for me.',
+        'Yesterday You said Tomorrow..',
+        'Don\'t wish for it , work for it...',
+        'One Year equals 365 possibilites..',
+        'Work Harder',
+        `जीवन की सबसे बड़ी ख़ुशी,
+        उस काम को करने में हैं,
+        जिसे लोग कहते हैं.
+        “तुम नहीं कर सकते”`,
+        `I find that the harder I work, the more luck I seem to have.`
 
 
     ];
@@ -58,7 +73,9 @@ function quotes() {
 
 
 }
-setInterval(quotes, 10 * 1000);
+setInterval(quotes, 20 * 1000);
+
+
 // Time 
 function clock() {
     const h1 = document.querySelector('h1');
@@ -87,17 +104,6 @@ function greet() {
     let hour = date.getHours();
     let sec = date.getSeconds();
 
-    let allMantra = [
-        'You get what you focus on.',
-        'Love for all , Hatred for none.... ',
-        'What we think, we become....',
-        'I\'m doing this for me.',
-        'Yesterday You said Tomorrow..',
-        'Don\'t wish for it , work for it...',
-        'One Year equals 365 possibilites..',
-        'Work Harder'
-    ];
-    if (sec % 10 == 0) {
 
         if (hour >= 4 && hour < 12) {
             h2.textContent = `Good Morning, ${USERNAME}`;
@@ -109,21 +115,31 @@ function greet() {
             h2.textContent = `Good Evening, ${USERNAME}`;
 
         }
-       
 
-    } else {
 
-        h2.textContent = `${allMantra[Math.floor(Math.random() * allMantra.length)]}`;
-    }
-} 
+    
+}
 
-setInterval(greet,4000);
+setInterval(greet, 1000);
 
 // adding new feature
 function changeBg() {
     const mainElement = document.querySelector('#main');
-    mainElement.style.backgroundImage = `url(Multimedia/p${Math.floor(Math.random()*25)}.jpg)`;
+    mainElement.style.backgroundImage = `url(Multimedia/p${Math.floor(Math.random() * 25)}.jpg)`;
 
 }
-    
-setInterval(changeBg,60*1000)
+
+setInterval(changeBg, 60 * 1000)
+
+// live
+function bigHeart(){
+    const h = document.querySelector('.live');
+    h.style.cssText = "font-size:120%";
+}
+function smallHeart(){
+    const h2 = document.querySelector('.live');
+    h2.style.cssText = "font-size:100%";
+}
+
+setInterval(bigHeart,1000);
+setTimeout(smallHeart,2000);

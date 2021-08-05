@@ -3,9 +3,14 @@
     right:0;
     left:0;
     bottom:0;
-    padding:1rem .5rem .5rem;
+    padding:.2rem .5rem .2rem;
     text-align: center;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.568);
 
+}
+.live{
+  font-size: 90%;  
 }
 .special-text{
     font-size: 110%;
