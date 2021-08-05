@@ -40,6 +40,7 @@
     right:0;
     left:0;
     bottom:0;
+    z-index: 999999;
     background-color: rgba(0, 0, 0, 0.596);
     display: none;
     
