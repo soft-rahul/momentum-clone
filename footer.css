@@ -1,0 +1,13 @@
+.footer{
+    position:absolute;
+    right:0;
+    left:0;
+    bottom:0;
+    padding:1rem .5rem .5rem;
+    text-align: center;
+
+}
+.special-text{
+    font-size: 110%;
+    color:red;
+}
