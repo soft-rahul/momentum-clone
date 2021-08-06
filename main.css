@@ -1,7 +1,7 @@
 .main-container {
   min-height: 100vh;
   background-color: #000;
-  background-image: "";
+  background-image: url('https://unsplash.com/photos/5E5N49RWtbA');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;

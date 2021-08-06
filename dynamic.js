@@ -122,24 +122,5 @@ function greet() {
 
 setInterval(greet, 1000);
 
-// adding new feature
-function changeBg() {
-    const mainElement = document.querySelector('#main');
-    mainElement.style.backgroundImage = `url(Multimedia/p${Math.floor(Math.random() * 25)}.jpg)`;
 
-}
 
-setInterval(changeBg, 60 * 1000)
-
-// live
-function bigHeart(){
-    const h = document.querySelector('.live');
-    h.style.cssText = "font-size:120%";
-}
-function smallHeart(){
-    const h2 = document.querySelector('.live');
-    h2.style.cssText = "font-size:100%";
-}
-
-setInterval(bigHeart,1000);
-setTimeout(smallHeart,2000);
