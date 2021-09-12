@@ -4,9 +4,9 @@
   background-image: url('https://unsplash.com/photos/5E5N49RWtbA');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 section.main-section {

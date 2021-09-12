@@ -11,9 +11,9 @@
 
     <!-- adding external resources -->
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="main.css" />
+    <!-- <link rel="stylesheet" href="main.css" /> -->
     <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <!-- <link rel="stylesheet" href="footer.css" /> -->
     
 
     <!-- cdn font  -->
@@ -34,39 +34,34 @@
   </head>
 
   <body>
-    <main id="main" class="main-container">
-      <header class="header">
-        <div class="menu">
-          <div class="button" onclick="myMenuOpen()">&#9776;</div>
-          <div class="menu-content display">
-            <div class="menu-content-options">
-              <button class="close-x" onclick="myMenuClose()">&times;</button>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path
-                  fill="#00cba9"
-                  fill-opacity="1"
-                  d="M0,96L48,101.3C96,107,192,117,288,144C384,171,480,213,576,202.7C672,192,768,128,864,122.7C960,117,1056,171,1152,192C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-                ></path>
-              </svg>
-            </div>
+    <header class="header">
+      <div class="header__icon">
+       <img src="./Multimedia/UI/profile-icon.svg" width="40" height="40" alt="">
+      </div>
+      <div class="header__modal">
+        <button>X</button>
+        <div class="modal__profile">
+          <div class="profile__image">
+
+          </div>
+          <div class="profile__name">
+            <h2>RAHUL KESHRI</h2>
           </div>
         </div>
-        <div class="gitHub">
-          <a href="https://github.com/soft-rahul">
-            <img
-              src="favicon.ico"
-              style="
-                display: inline-block;
-                width: 2.5rem;
-                height: 2.5rem;
-                border-radius: 50%;
-              "
-              alt="MyPic"
-              class="circle"
-            />
-          </a>
+        <div class="modal__feedback">
+          <div class="feedback__content">
+
+          </div>
+          <div class="feedback social__media">
+            <div class="social__icon"></div>
+            <div class="social__icon"></div>
+            <div class="social__icon"></div>
+            <div class="social__icon"></div>
+          </div>
         </div>
-      </header>
+      </div>
+    </header>
+    <main id="main" class="main-container">
 
       <!-- main area -->
       <section class="main-section">

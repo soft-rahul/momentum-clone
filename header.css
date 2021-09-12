@@ -1,94 +1,79 @@
-.header{
-
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    padding:.8rem 1rem .4rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0,0,0,0);
-    color:#fff;
+.header {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
 }
-.menu{
-    
+.header__circle {
 }
 
-.menu .button{
-    background-color: cyan;
-    color: #fff;
-    padding: .4rem .6rem;
-    border-radius: 4px;
-    font-size: 110%;
-    cursor: pointer;
-    transition: all 400ms;
-
+.menu .button {
+  background-color: cyan;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  font-size: 110%;
+  cursor: pointer;
+  transition: all 400ms;
 }
-.menu .button:hover{
-    background-color: #fff;
-    color:cyan;
+.menu .button:hover {
+  background-color: #fff;
+  color: cyan;
 }
 
 /* menu bar */
-.menu-content{
-    transition: all 400ms linear;
+.menu-content {
+  transition: all 400ms linear;
 }
-.display{
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-    z-index: 999999;
-    background-color: rgba(0, 0, 0, 0.596);
-    display: none;
-    
+.display {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.596);
+  display: none;
 }
-.menu-content-options{
-    position: absolute;
-    top:0;
-    bottom:0;
-    width:40%;
-    background-color: #fff;
-    color:#000;
-}
-
-.menu-content-options button.close-x{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: #fff;
-    color: #000;
-    border: 1px black solid;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    font-size: 120%;
-    padding: 0;
-    cursor: pointer;
-    transition: all 600ms;
-}
-.menu-content-options button.close-x:hover{
-    background-color: cyan;
-    color:#fff;
-    border:1px solid #fff;
+.menu-content-options {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  background-color: #fff;
+  color: #000;
 }
 
-
-.menu-content-options svg{
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
+.menu-content-options button.close-x {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #fff;
+  color: #000;
+  border: 1px black solid;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 120%;
+  padding: 0;
+  cursor: pointer;
+  transition: all 600ms;
+}
+.menu-content-options button.close-x:hover {
+  background-color: cyan;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-
-
-/* git hub section */
-div.github .circle{
-    transition:border 800ms ;
-}
-img:hover{
-    border:2px solid #fff;
+.menu-content-options svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
