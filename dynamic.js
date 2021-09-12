@@ -1,126 +1,154 @@
 function quotes() {
+  let myQuotes = [
+    `सपने और लक्ष्य में एक ही अंतर है
+    सपने के लिए बिना मेहनत की नींद चाहिए
+    और लक्ष्य के लिए बिना नींद की मेहनत`,
+    `ना थके कभी पैर ना कभी हिम्मत हारी है
+हौंसला है ज़िन्दगी में कुछ कर दिखाने का
+इसलिए अभी भी सफर जारी है`,
+    ` बूझी शमां भी जल सकती है, तूफ़ान से कश्ती भी निकल सकती है, होके मायूस यूँ ना अपने इरादे बदल, तेरी किस्मत कभी भी बदल सकती है.`,
+    `जो मुस्कुरा रहा है उसे दर्द ने पाला होगा, जो चल रहा है उसके पाँव में छाला होगा, बिना संघर्ष के इन्सान चमक नही सकता, जो जलेगा उसी दिये में तो उजाला होगा`,
+    `जिस नज़र से आप इस दुनिया को देखेंगे, ये दुनिया आपको वैसी ही दिखेगी।`,
+    ` वही सफल होता है
+जिसका काम उसे निरंतर आनंद देता है`,
+    `चार दिन की दुनिया है फिर हिसाब होगा
+आज गरीबी में जी ले मेरे दोस्त
+कल बादशाहों में अपना नाम होगा
+`,
+    `
+जो खैरात में मिलती कामयाबी तो हर शख्स कामयाब होता, फिर कदर न होती किसी हुनर की और न ही कोई शख्स लाजवाब होता।`,
+    ` अगर अपनी औकात देखनी है
+तो बाप के पैसों का इस्तेमाल करना छोड़ दो `,
 
+    ` अगर अपनी औकात देखनी है
+तो बाप के पैसों का इस्तेमाल करना छोड़ दो `,
+    ` आप जितना कम बोलेंगे
+इस दुनिया मे आपकी उतनी ज्यादा सुनी जाएगी`,
+    `
+कैसे हार जाऊं मैं इन तकलीफों के सामने
+मेरी माँ तरक्की की आस में कब से बैठी है`,
+    ` जो आपके साथ दिल से बात करता हो
+उसको कभी दिमाग से जवाब मत देना `,
 
+    `
+मेहनत करने से दिमाक
+और सच बोलने से दिल साफ रहता है `,
+    `
+जब भी MOTIVATION कम होने लगे
+अपने माँ-बाप की तरफ देखकर पढ़ना शुरू करदे `,
+    ` 25 की उम्र में लोग शादी करके अपने बच्चों के बारे में सोचते है
+और मुझे मेरी माँ को AUDI के आगे वाली सीट पर बैठाना है `,
+    ` मुश्किलें जरूर है मगर ठहरा नही हूँ मैं
+मंजिलों से कह दो अभी पहुंचा नही हूँ मैं `,
+    `राह संघर्ष की जो चलता है वहीं संसार को बदलता है जिसने रातों में जंग जीती है सूर्य बनकर वही निकलता है`,
+    `इंसान कहता है अगर पैसा हो तो मैं कुछ करके दिखाऊ और पैसा कहता है कुछ करके दिखाओ तो मैं आऊ`,
+    `मैं तुरंत नहीं लेकिन निश्चित तौर पर जीतूँगा`,
+    `विनर और कोई नहीं होता है वह
+वही लूजर होता है जो हारने के
+खद एक बार और प्रयास करता है।`,
+    `
+तुमने खुद को कमजोर मान रखा है,
+वरना तुम जो कर सकते हो वो कोई दूसरा नही कर सकता।`,
+    `किस्मत के दरवाजे पर सर पीटने से
+बेहतर है, अपने कर्मों के तूफान पैदा
+करें, दरवाजे अपने आप खुल जायेंगे।`,
+    `आंखों, में
+नींद बहुत है पर सोना नहीं है,
+यही समय है कुछ करने का इसे
+खोना नहीं है।
+`,
+    `अगर मेहनत आदत बन जाए
+तो कामयाबी 'मुकद्दर' बन जाती है।`,
+    `आज रांस्ता बना लिया है,
+तो कल मंजिल भी मिल जाएगी ॥
+हौसलों से भरी यह कोशिश एक दिन
+जरूर रंग लाएगी !!`,
+    `हमेशा याद रखना, अच्छे दिनों के लिए,
+बुरे दिनों से लड़ना पड़ता है।`,
+    `
+अगर जिंदगी में सुकून चाहते हो तो
+Focus अपने काम पर करो लोगों की
+बातो पर नहीं..`,
+    `
+जो मेहनत पे भरोसा करते हैं
+वो किस्मत की बात कभी नही करते`,
+    `अगर आपको कुछ बड़ा करना है,
+तो बड़े लोगो की तरह सोचो।
+`,
+    `
+जो.
+व्यक्ति खुद को control
+कर सकता है वो जिंदगी में कुछ
+भी कर सकता है।`,
+    `
+हमेशा अपना बेस्ट करो जो तुम अभी बोते हो उसकी फसल बाद में काटते हो`,
+    `आपका का आने वाला कल कैसा होगा यह इस बात पर निर्भर करता है कि आप आज अपने बारे में क्या सोचते है`,
+    `मेहनत इतनी खामोशी से करो की  कामयाबी
 
+शोर मचा दे`,
+    `
+समय सीमित है इसलिए इसे किसी और की
 
-    let myQuotes = [
-        `when you have a dream , you've got to grab it and never let go.`,
-        `Nothing is impossible.The word itself says I'm possible !`,
-        `There is nothing impossible to they who will try `,
-        ` The bad news is time flies. The good news is you're the pilot `,
-        `Spread love everywhere you go. `,
-        `Belief creats the actual fact`,
-        `The Man who has confidence in himself gains the confidence of others.`,
-        `What the mind can conceive and believe , it can achieve.`,
-        `Live as if you were to die tomorrow. Learn as if you were to live forever.`,
-        `We become what we think most of the time, and that's the strangest secret.`,
-        `The best revenge is massive success ! .`,
-        `Patience, persistence, and perspiration make an unbeatable combination for success.`,
-        `Poor people have big TVs. Rich people have a big library.`,
-        ` Don’t let the fear of losing be greater than the excitement of winning.`,
-        `If you want to be successful, find someone who has achieved the results you want and copy what they do and you’ll achieve the same results. `,
-        `Someone is sitting in the shade today because someone planted a tree a long time ago.`,
-        `Make each day your masterpiece. `,
-        ` Doing the best at this moment puts you in the best place for the next moment.`,
-        `A goal is a dream with a deadline.`,
-        `You’ll never change your life until you change something you do daily. The secret of your success is found in your daily routine`,
-        `A strong, positive self-image is the best possible preparation for success.`,
-        `Do one thing every day that scares you.`,
-        `Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.`,
-        `It does not matter how slowly you go, so long as you do not stop.`,
-        `Great minds discuss ideas. Average minds discuss events. Small minds discuss people. `,
-        `Don’t compare yourself with anyone in this world… if you do so, you are insulting yourself `,
-        `Small daily improvements are the key to staggering long term results`,
-        `Motivation is what gets you started. Habit is what keeps you going – Jim Rohn`,
-        `Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success." --Swami Vivekananda`,
-        `I am capable . I am Strong. I Believe in Myself `,
-        `There's Plenty of Time to Rest When You're dead .`,
-        `You do not find the happy life. You make it.`,
-        `No pressure, No Diamonds`,
-        `Stay hungry,Stay foolish`,
-        `Eat,Sleep,Code,Repeat;`,
-        `Every Moment is a fresh beginning `,
-        `Try Again,Fail again,Fail Better.`,
-        `You never fail until you stop trying...`,
-        `Dream Big, stay positive, work hard, and enjoy the journey..`,
-        `Enjoy the little things, for one day you may look back and realize they were the big things...`,
-        `If beautiful lilies bloom in ugly waters, you too can blossom in ugly situations ..`,
-        `I may stumble. I may fail. I may cry.But I'll NEVER give up! Tomorrow, I rise again.`,
-        `EveryThing you can imagine is real..`,
-        `We are all in the gutter , but some of us are looking at the stars..`,
-        `Mostly, the world sees you the way you see yourself..`,
-        `There is no substitute for hard work ...`,
+जिंदगी जी कर व्यर्थ मत करो`,
+  ];
 
-        'You get what you focus on.',
-        'Love for all , Hatred for none.... ',
-        'What we think, we become....',
-        'I\'m doing this for me.',
-        'Yesterday You said Tomorrow..',
-        'Don\'t wish for it , work for it...',
-        'One Year equals 365 possibilites..',
-        'Work Harder',
-        `जीवन की सबसे बड़ी ख़ुशी,
-        उस काम को करने में हैं,
-        जिसे लोग कहते हैं.
-        “तुम नहीं कर सकते”`,
-        `I find that the harder I work, the more luck I seem to have.`
-
-
-    ];
-
-    let h2 = document.querySelector('.q');
-    h2.textContent = myQuotes[Math.floor(Math.random() * myQuotes.length)];
-
-
+  let h2 = document.querySelector(".q");
+  h2.textContent = myQuotes[Math.floor(Math.random() * myQuotes.length)];
 }
-setInterval(quotes, 20 * 1000);
 
 
-// Time 
+window.addEventListener('load',quotes);
+setInterval(quotes, 30 * 1000);
+
+// Time
 function clock() {
-    const h1 = document.querySelector('h1');
-    const clock = new Date();
-    let hour = clock.getHours();
-    let minute = clock.getMinutes();
-    if (minute < 10) {
-        minute = `0${minute}`;
-    }
-    if (hour < 10) {
-        hour = `0${hour}`;
-    }
-    h1.textContent = ` ${hour}:${minute} `;
-
+  const h1 = document.querySelector("h1");
+  const clock = new Date();
+  let hour = clock.getHours();
+  let minute = clock.getMinutes();
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  h1.textContent = ` ${hour}:${minute} `;
 }
 
 setInterval(clock, 1000);
 
-
-// greeting user 
+// greeting user
 function greet() {
-    const USERNAME = 'Rahul Keshri';
-    const h2 = document.querySelector('.greet');
+  const USERNAME = "Bro";
+  const h2 = document.querySelector(".greet");
 
-    let date = new Date();
-    let hour = date.getHours();
-    let sec = date.getSeconds();
+  let date = new Date();
+  let hour = date.getHours();
+  let sec = date.getSeconds();
 
-
-        if (hour >= 4 && hour < 12) {
-            h2.textContent = `Good Morning, ${USERNAME}`;
-
-        } else if (hour >= 12 && hour <= 16) {
-            h2.textContent = `Good Afternoon, ${USERNAME}`;
-
-        } else if (hour >= 16 || hour < 4) {
-            h2.textContent = `Good Evening, ${USERNAME}`;
-
-        }
-
-
-    
+  if (hour >= 4 && hour < 12) {
+    h2.textContent = `Good Morning, ${USERNAME}`;
+  } else if (hour >= 12 && hour <= 16) {
+    h2.textContent = `Good Afternoon, ${USERNAME}`;
+  } else if (hour >= 16 || hour < 4) {
+    h2.textContent = `Good Evening, ${USERNAME}`;
+  }
 }
 
 setInterval(greet, 1000);
 
+// MOdal show  function
+function showModal() {
+  const ele = document.querySelector(".header__modal");
+  ele.style.cssText = "display:block";
+}
 
+function hideModal() {
+  const ele = document.querySelector(".header__modal");
+  ele.style.cssText = "display:none";
+}
 
+const img = document.querySelector(".header__icon");
+img.addEventListener("click", (e) => {
+  showModal();
+});

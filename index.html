@@ -11,7 +11,7 @@
 
     <!-- adding external resources -->
     <link rel="stylesheet" href="reset.css" />
-    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="header.css" />
     <!-- <link rel="stylesheet" href="footer.css" /> -->
     
@@ -39,7 +39,7 @@
        <img src="./Multimedia/UI/profile-icon.svg" width="40" height="40" alt="">
       </div>
       <div class="header__modal">
-        <button class="modal-close__btn btn" >X</button>
+        <button class="modal-close__btn btn" onclick="hideModal()" >X</button>
         <div class="modal__profile">
           <div class="profile__image">
             <img src="./Multimedia/UI/profile.jpg" style="max-width: 100%; height: 200px; border-radius: 50%;" alt="">
@@ -64,33 +64,22 @@
         </div>
       </div>
     </header>
-    <main id="main" class="main-container">
+    <main class="main-container">
 
       <!-- main area -->
-      <section class="main-section">
-        <div class="main-section-boxes time">
+      <section class="main__section">
+        <div class="main__section--box time">
           <h1 class="time">Time</h1>
         </div>
-        <div class="main-section-boxes greeting">
+        <div class="main__section--box greeting">
           <h2 class="greet"></h2>
         </div>
-        <div class="main-section-boxes quote">
-          <h2 class="q">Eeverything has beauty, but not everyone can see.</h2>
+        <div class="main__section--box quote">
+          <p class="q"></p>
         </div>
       </section>
 
-      <footer class="footer">
-        <div class="footer-wrapper">
-          <p>
-            &copy; All Rights Reserved 2021-2022
-            <span class="special-text"
-              >Created From <span class="live"><i class="fas fa-heart"></i
-            >
-            </span>
-          </span>
-          </p>
-        </div>
-      </footer>
+     
     </main>
 
     <!-- java script -->
