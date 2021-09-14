@@ -2,77 +2,102 @@
   min-height: 100vh;
   padding: 1rem 0.2rem;
   display: flex;
+  background-color: #000;
+  color: #fff;
 }
 
 .main__section {
-  margin:auto;
-  flex:1;
+  margin: auto;
+  flex: 1;
   padding: 0.5rem;
   text-align: center;
-  color: rgb(0, 0, 0);
 }
 .main__section--box {
-  margin:1rem 0;
+  margin: 1rem 0;
 }
-.main__section--box h1{
+.main__section--box h1 {
+  font-family: "Comfortaa", cursive;
   font-size: 4.2rem;
 }
 
-
-
-.main__section--box h2{
+.main__section--box h2 {
   font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
 }
-.main__section--box p.q{
+.greeting button {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  margin: 0.5rem 0;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 0, 255);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 4px -1px 0px rgb(255 255 255);
+}
+
+.greeting button:hover {
+  box-shadow: 3px 4px #ffffffeb;
+}
+.main__section--box p.q {
+  font-family: "Teko", sans-serif;
   font-size: 1.6rem;
 }
-@media screen and (min-width:720px) {
-  .main__section--box h1{
+@media screen and (min-width: 720px) {
+  .main__section--box h1 {
     font-size: 5rem;
   }
-  .main__section--box h2{
+  .main__section--box h2 {
     font-size: 1.8rem;
   }
-  .main__section--box p.q{
+  .main__section--box p.q {
     font-size: 2rem;
   }
-
-
 }
 
-@media screen and (min-width:880px) and (max-width:1600px) {
-  .main__section--box h1{
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .main__section--box h1 {
     font-size: 5.5rem;
   }
-  .main__section--box h2{
+  .main__section--box h2 {
     font-size: 2rem;
   }
-  .main__section--box p.q{
+  .main__section--box p.q {
     font-size: 2.5rem;
   }
-
-
+}
+@media screen and (min-width: 1200px) {
+  .main__section--box h1 {
+    font-size: 7.2rem;
+  }
+  .main__section--box h2 {
+    font-size: 2.2rem;
+  }
+  .main__section--box p.q {
+    font-size: 3rem;
+  }
 }
 
-
-p.q{
+p.q {
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   color: cyan;
 }
 .q::before {
   content: open-quote;
-  color: rgb(255, 0, 0);
-  padding:0 0.4rem;
-  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 0 0.4rem;
+  font-weight: 700;
 }
 .q::after {
   content: close-quote;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 0 0.4rem;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 
 /* h1.time {
   font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro",
@@ -94,4 +119,3 @@ p.q{
 
 /* h2.greet {
   font-size: 2.5rem; */
-
