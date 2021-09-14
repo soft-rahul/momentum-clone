@@ -17,12 +17,43 @@
 .main__section--box h1{
   font-size: 4.2rem;
 }
+
+
+
 .main__section--box h2{
   font-size: 1.4rem;
 }
 .main__section--box p.q{
   font-size: 1.6rem;
 }
+@media screen and (min-width:720px) {
+  .main__section--box h1{
+    font-size: 5rem;
+  }
+  .main__section--box h2{
+    font-size: 1.8rem;
+  }
+  .main__section--box p.q{
+    font-size: 2rem;
+  }
+
+
+}
+
+@media screen and (min-width:880px) and (max-width:1600px) {
+  .main__section--box h1{
+    font-size: 5.5rem;
+  }
+  .main__section--box h2{
+    font-size: 2rem;
+  }
+  .main__section--box p.q{
+    font-size: 2.5rem;
+  }
+
+
+}
+
 
 p.q{
   font-family: "Poppins", sans-serif;

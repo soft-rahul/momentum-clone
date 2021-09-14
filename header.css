@@ -78,6 +78,10 @@ html {
   align-items: center;
   font-size: 2.5rem;
 }
+.social__media a{
+  color:#fff;
+  text-decoration: none;
+}
 .hover-orange:hover {
   color: orangered;
 }
